@@ -9,4 +9,6 @@ def solution(x: np.array) -> float:
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
     t = 76
-    return (2 / t**2) * np.mean(x)
+    n = len(x)
+    lmbd = x.sum() / (t*n)
+    return lmbd
